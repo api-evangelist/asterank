@@ -1,0 +1,38 @@
+{
+    "name": "Asterank",
+    "description": "<p>Asterank is a scientific and economic database of over 600,000 asteroids. &nbsp;We've collected, computed, or inferred important data such as asteroid mass and composition from multiple scientific sources. With this information, we estimate the costs and rewards of mining asteroids. &nbsp;Details on orbits and basic physical parameters are sourced from the Minor Planet Center and NASA JPL. Composition data is based on spectral classification and size. Our calculations incorporate conclusions from multiple scientific publications in addition to cross-referencing known meteorite data.<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/asterank.png",
+    "tags": [
+        "api provider",
+        "asteroid",
+        "have api",
+        "nasa"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/asterank\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Asterank",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/asterank.png",
+            "humanURL": "http:\/\/www.asterank.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/asterank-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Website",
+            "url": "http:\/\/www.asterank.com\/"
+        }
+    ]
+}
