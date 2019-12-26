@@ -6,10 +6,11 @@
         "api provider",
         "asteroid",
         "have api",
-        "nasa"
+        "nasa",
+        "postman collections"
     ],
-    "created": "2019-12-20",
-    "modified": "2019-12-20",
+    "created": "2019-12-25",
+    "modified": "2019-12-25",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/asterank\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -20,7 +21,16 @@
             "humanURL": "http:\/\/www.asterank.com\/",
             "baseURL": "",
             "tags": [],
-            "properties": []
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/asterank\/master\/asterank-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/asterank\/master\/asterank-postman-collection.json"
+                }
+            ]
         }
     ],
     "include": [],
