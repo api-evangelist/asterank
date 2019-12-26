@@ -3,13 +3,102 @@
     "info": {
         "version": "",
         "title": "Asterank",
-        "description": "",
+        "description": "Asterank is a scientific and economic database of over 600,000 asteroids. We've collected, computed, or inferred important data such as asteroid mass and composition from multiple scientific sources. With this information, we estimate the costs and rewards of mining asteroids. Details on orbits and basic physical parameters are sourced from the Minor Planet Center and NASA JPL. Composition data is based on spectral classification and size. Our calculations incorporate conclusions from multiple scientific publications in addition to cross-referencing known meteorite data.",
         "termsOfService": ""
     },
-    "servers": [
-        "https"
-    ],
-    "paths": [],
+    "servers": [],
+    "paths": {
+        "https:\/\/www.asterank.com\/api\/mpc?query={%22e%22:{%22$lt%22:0.1},%22i%22:{%22$lt%22:4},%22a%22:{%22$lt%22:1.5}}&limit=10": {
+            "GET": {
+                "summary": "Minor Planet Center",
+                "description": "Asterank offers a database API for the Minor Planet Center's MPCORB.DAT data files. This API is a simple way to quickly apply constraints to a set of over 600,000 asteroids. Users can construct queries with specific constraints across all data attributes recorded by the MPC. Information is updated nightly from the MPC's MPCORB.dat dataset.",
+                "operationId": "MinorPlanetCenter",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "limit",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "https:\/\/www.asterank.com\/api\/skymorph\/image?key=|001204124410|51882.530787037|129.062741402712|4.64001695570385|128.337645|4.0726|20.70|-4.28|-11.08|n.a.|n.a.|n.a.|71.9154214757038|547.287989060186|y|": {
+            "GET": {
+                "summary": "SkyMorph\/NEAT Copy",
+                "description": "This API wraps NASA's SkyMorph archive in a RESTful JSON interface. Currently, it provides observation and image data from the NEAT survey.",
+                "operationId": "SkymorphNeatCopy",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "key",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "https:\/\/www.asterank.com\/api\/skymorph\/search?target=J99TS7A": {
+            "GET": {
+                "summary": "SkyMorph\/NEAT",
+                "description": "This API wraps NASA's SkyMorph archive in a RESTful JSON interface. Currently, it provides observation and image data from the NEAT survey.",
+                "operationId": "SkymorphNeat",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "target",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "https:\/\/www.asterank.com\/api\/asterank?query={%22e%22:{%22$lt%22:0.1},%22i%22:{%22$lt%22:4},%22a%22:{%22$lt%22:1.5}}&limit=10": {
+            "GET": {
+                "summary": "Asterank",
+                "description": "The Asterank database is a thin layer over the NASA\/JPL Small Body Database, merged with JPL delta-v data, published asteroid mass data, and our own calculations. ",
+                "operationId": "Asterank",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "limit",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "https:\/\/www.asterank.com\/api\/kepler?query={%22TPLANET%22:{%22$lt%22:320,%22$gt%22:290}}&limit=10": {
+            "GET": {
+                "summary": "Kepler Project",
+                "description": "Asterank offers a basic queryable database for NASA's Kepler Project. It is a simple way to quickly apply constraints to a set of over 2,000 exoplanets and unconfirmed \"objects of interest.\" The database supports comparators and specific criteria for all attributes provided by the Kepler Data Explorer.",
+                "operationId": "KeplerProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "limit",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
     "components": {
         "schemas": []
     }
