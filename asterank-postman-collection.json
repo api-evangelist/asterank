@@ -1,5 +1,5 @@
 {
-    "id": "8b3105e241ccc3b0da48fc91723b1ff1",
+    "id": "bf1032a4b61b5006e5506b463f80d0f5",
     "name": "Asterank",
     "description": null,
     "auth": null,
@@ -8,5 +8,182 @@
     "order": [],
     "folders_order": [],
     "folders": [],
-    "requests": []
+    "requests": [
+        {
+            "id": "f52bfa83b76d560e2cfd5cc284b49395",
+            "name": "Minor Planet Center",
+            "url": "https:\/\/www.asterank.com\/api\/mpc?query={%22e%22:{%22$lt%22:0.1},%22i%22:{%22$lt%22:4},%22a%22:{%22$lt%22:1.5}}&limit=10",
+            "description": "Asterank offers a database API for the Minor Planet Center's MPCORB.DAT data files. This API is a simple way to quickly apply constraints to a set of over 600,000 asteroids. Users can construct queries with specific constraints across all data attributes recorded by the MPC. Information is updated nightly from the MPC's MPCORB.dat dataset.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "query",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bf1032a4b61b5006e5506b463f80d0f5",
+            "rawModeData": ""
+        },
+        {
+            "id": "39a11a20092ae7788598050931a6e073",
+            "name": "SkyMorph\/NEAT Copy",
+            "url": "https:\/\/www.asterank.com\/api\/skymorph\/image?key=|001204124410|51882.530787037|129.062741402712|4.64001695570385|128.337645|4.0726|20.70|-4.28|-11.08|n.a.|n.a.|n.a.|71.9154214757038|547.287989060186|y|",
+            "description": "This API wraps NASA's SkyMorph archive in a RESTful JSON interface. Currently, it provides observation and image data from the NEAT survey.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "key",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bf1032a4b61b5006e5506b463f80d0f5",
+            "rawModeData": ""
+        },
+        {
+            "id": "9ac5f8f973c75ee773194e08baf61477",
+            "name": "SkyMorph\/NEAT",
+            "url": "https:\/\/www.asterank.com\/api\/skymorph\/search?target=J99TS7A",
+            "description": "This API wraps NASA's SkyMorph archive in a RESTful JSON interface. Currently, it provides observation and image data from the NEAT survey.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "target",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bf1032a4b61b5006e5506b463f80d0f5",
+            "rawModeData": ""
+        },
+        {
+            "id": "0493c4ee5a9137199ee8a30f322456fa",
+            "name": "Asterank",
+            "url": "https:\/\/www.asterank.com\/api\/asterank?query={%22e%22:{%22$lt%22:0.1},%22i%22:{%22$lt%22:4},%22a%22:{%22$lt%22:1.5}}&limit=10",
+            "description": "The Asterank database is a thin layer over the NASA\/JPL Small Body Database, merged with JPL delta-v data, published asteroid mass data, and our own calculations. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "query",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bf1032a4b61b5006e5506b463f80d0f5",
+            "rawModeData": ""
+        },
+        {
+            "id": "18b9adb200ef9d77021c55d2a1f9d32b",
+            "name": "Kepler Project",
+            "url": "https:\/\/www.asterank.com\/api\/kepler?query={%22TPLANET%22:{%22$lt%22:320,%22$gt%22:290}}&limit=10",
+            "description": "Asterank offers a basic queryable database for NASA's Kepler Project. It is a simple way to quickly apply constraints to a set of over 2,000 exoplanets and unconfirmed \"objects of interest.\" The database supports comparators and specific criteria for all attributes provided by the Kepler Data Explorer.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "query",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bf1032a4b61b5006e5506b463f80d0f5",
+            "rawModeData": ""
+        }
+    ]
 }
